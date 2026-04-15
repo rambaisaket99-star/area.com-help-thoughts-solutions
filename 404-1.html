@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>404 — Page Not Found · Area AI</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#faf9f6;--bg2:#f3f1eb;--white:#fff;--border:#dedad0;--border2:#ccc8bc;
+  --text:#19190f;--text2:#48483a;--text3:#78786a;--text4:#a8a89a;--accent:#c8773a;
+  --font:'DM Sans','Helvetica Neue',sans-serif;--serif:'DM Serif Display',Georgia,serif;
+  --nav-h:60px;
+}
+html,body{height:100%;background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}button{cursor:pointer;font-family:var(--font)}
+
+nav{position:sticky;top:0;z-index:200;height:var(--nav-h);background:rgba(250,249,246,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 32px}
+.nav-brand{display:flex;align-items:center;gap:9px;flex-shrink:0;cursor:pointer}
+.nav-brand-name{font-size:18px;font-weight:600;letter-spacing:-.04em}
+.nav-actions{display:flex;gap:8px;margin-left:auto}
+.btn{display:inline-flex;align-items:center;padding:8px 16px;border-radius:8px;font-size:14px;font-weight:500;border:none;cursor:pointer;transition:all .14s;font-family:var(--font)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border2)}.btn-outline:hover{background:var(--bg2)}
+.btn-dark{background:var(--text);color:#fff}.btn-dark:hover{background:#2c2c20}
+
+.page-wrap{display:flex;align-items:center;justify-content:center;min-height:calc(100vh - var(--nav-h));padding:60px 32px}
+.error-box{max-width:580px;text-align:center}
+.error-code{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text4);margin-bottom:24px;display:block}
+.error-butterfly{font-size:72px;margin-bottom:32px;animation:float 3s ease-in-out infinite;display:block}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.error-title{font-family:var(--serif);font-size:clamp(36px,5vw,58px);font-weight:400;letter-spacing:-.03em;line-height:1.1;margin-bottom:18px}
+.error-title em{font-style:italic;color:var(--text3)}
+.error-sub{font-size:16px;color:var(--text3);font-weight:300;line-height:1.75;margin-bottom:36px;max-width:440px;margin-left:auto;margin-right:auto}
+.error-btns{display:flex;gap:11px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+.btn-primary{padding:12px 24px;border-radius:9px;background:var(--text);color:#fff;border:none;font-size:15px;font-weight:500;cursor:pointer;font-family:var(--font);transition:all .15s}
+.btn-primary:hover{background:#2c2c20;box-shadow:0 4px 16px rgba(0,0,0,.18)}
+.btn-secondary{padding:12px 24px;border-radius:9px;background:transparent;color:var(--text);border:1.5px solid var(--border2);font-size:15px;font-weight:500;cursor:pointer;font-family:var(--font);transition:all .15s}
+.btn-secondary:hover{background:var(--bg2)}
+.error-links{display:flex;align-items:center;gap:6px;justify-content:center;flex-wrap:wrap}
+.error-link{font-size:14px;color:var(--text3);padding:6px 14px;border-radius:7px;border:1px solid var(--border);background:var(--white);cursor:pointer;transition:all .12s}
+.error-link:hover{background:var(--bg2);border-color:var(--border2);color:var(--text)}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-brand" onclick="window.location.href='index.html'">
+    <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="arl1_404" cx="28%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient>
+            <radialGradient id="arl2_404" cx="72%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient>
+            <radialGradient id="arl3_404" cx="28%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient>
+            <radialGradient id="arl4_404" cx="72%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient>
+          </defs>
+          <path d="M50 45C43 25,17 16,10 30C4 43,18 62,50 49Z" fill="url(#arl1_404)"/>
+          <path d="M50 45C57 25,83 16,90 30C96 43,82 62,50 49Z" fill="url(#arl2_404)"/>
+          <path d="M50 54C38 58,16 71,21 82C27 91,44 86,50 60Z" fill="url(#arl3_404)"/>
+          <path d="M50 54C62 58,84 71,79 82C73 91,56 86,50 60Z" fill="url(#arl4_404)"/>
+          <ellipse cx="50" cy="51" rx="2.2" ry="9" fill="#c4d4f2" opacity=".85"/>
+        </svg>
+    <span class="nav-brand-name">Area</span>
+  </div>
+  <div class="nav-actions">
+    <button class="btn btn-outline" onclick="window.location.href='area-console.html'">Console</button>
+    <button class="btn btn-dark" onclick="window.location.href='index.html'">Home</button>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <div class="error-box">
+    <span class="error-code">Error 404</span>
+    <span class="error-butterfly"><svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient id="bf1_40" cx="28%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient><radialGradient id="bf2_40" cx="72%" cy="28%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#9ab4ec"/></radialGradient><radialGradient id="bf3_40" cx="28%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient><radialGradient id="bf4_40" cx="72%" cy="72%" r="72%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#7ba4e8"/></radialGradient></defs><path d="M50 45C43 25,17 16,10 30C4 43,18 62,50 49Z" fill="url(#bf1_40)"/><path d="M50 45C57 25,83 16,90 30C96 43,82 62,50 49Z" fill="url(#bf2_40)"/><path d="M50 54C38 58,16 71,21 82C27 91,44 86,50 60Z" fill="url(#bf3_40)"/><path d="M50 54C62 58,84 71,79 82C73 91,56 86,50 60Z" fill="url(#bf4_40)"/><ellipse cx="50" cy="51" rx="2.2" ry="9" fill="#c4d4f2" opacity=".85"/></svg></span>
+    <h1 class="error-title">This page <em>flew away</em></h1>
+    <p class="error-sub">The page you're looking for doesn't exist, was moved, or is no longer available. Let's get you back to somewhere useful.</p>
+    <div class="error-btns">
+      <button class="btn-primary" onclick="window.location.href='index.html'">Back to home</button>
+      <button class="btn-secondary" onclick="history.back()">← Go back</button>
+    </div>
+    <div class="error-links">
+      <span class="error-link" onclick="window.location.href='area-docs.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Documentation</span>
+      <span class="error-link" onclick="window.location.href='area-console.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Console</span>
+      <span class="error-link" onclick="window.location.href='pricing.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Pricing</span>
+      <span class="error-link" onclick="window.location.href='blog.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Blog</span>
+      <span class="error-link" onclick="window.location.href='about.html'"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> About</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
